@@ -14,6 +14,9 @@ DeviceProcessEvents
 | project Timestamp, FileName, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine
 | order by Timestamp desc
 ```
+<img width="1113" height="786" alt="image" src="https://github.com/user-attachments/assets/52b90dad-3e4b-49b9-a31d-b0cd8698aae6" />
+
+
 
 ### Observation
 Large number of PowerShell and Command Prompt executions were observed in a short time window.
@@ -34,6 +37,7 @@ DeviceProcessEvents
 | project Timestamp, FileName, ProcessCommandLine, InitiatingProcessFileName
 | order by Timestamp desc
 ```
+<img width="1156" height="763" alt="image" src="https://github.com/user-attachments/assets/b22adb79-1b4b-49b7-8982-427c9a4b6400" />
 
 ### Observation
 Repeated pattern detected:
@@ -63,6 +67,7 @@ DeviceProcessEvents
 | project Timestamp, FileName, ProcessCommandLine
 | order by Timestamp desc
 ```
+<img width="1177" height="618" alt="image" src="https://github.com/user-attachments/assets/b9264002-3612-41c0-b901-94175b783868" />
 
 ### Observation
 
@@ -89,6 +94,7 @@ DeviceProcessEvents
 | project Timestamp, FileName, ProcessCommandLine, InitiatingProcessFileName
 | order by Timestamp desc
 ```
+<img width="1196" height="597" alt="image" src="https://github.com/user-attachments/assets/13be047c-43ef-4d7c-9410-445030f322b9" />
 
 ### Observation
 
