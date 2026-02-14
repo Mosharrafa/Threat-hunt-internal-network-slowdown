@@ -15,21 +15,60 @@ An internal endpoint may be performing automated reconnaissance or port scanning
 - DeviceProcessEvents
 - DeviceFileEvents
 
-## Investigation Steps
-1. Identify abnormal network connections
-2. Pivot into process activity
-3. Identify executed scripts or commands
-4. Confirm malicious behavior
-5. Map activity to MITRE ATT&CK
+## Investigation Workflow
+
+The investigation followed a structured approach:
+
+1. Detect abnormal network behavior
+2. Identify responsible process
+3. Validate script execution artifacts
+4. Map behavior to MITRE ATT&CK techniques
+5. Recommend containment and remediation
+
+---
+
+## Key Finding
+
+An endpoint executed a PowerShell script that performed automated internal network scanning.
+
+The system attempted connections to multiple internal hosts and services in a short time period, matching reconnaissance activity commonly performed by attackers before lateral movement.
+
+---
 
 ## Tools Used
-- Microsoft Defender for Endpoint
-- Microsoft Sentinel
-- KQL (Kusto Query Language)
 
-## Outcome
-The investigation confirmed unauthorized PowerShell-based network scanning activity originating from an internal device.
+- Microsoft Defender for Endpoint (Advanced Hunting)
+- KQL Queries
+- MITRE ATT&CK Framework
 
+---
 
+## Repository Structure
+
+```
+1-Network/        → Network behavior analysis
+2-Process/        → Process execution investigation
+3-File/           → Script artifact analysis
+4-ATTACK-Mapping/ → MITRE technique mapping
+5-Response/       → Containment & remediation plan
+```
+
+---
+
+## Skills Demonstrated
+
+- Threat hunting methodology
+- Log correlation
+- Behavioral analysis
+- Incident documentation
+- Security response planning
+
+---
+
+## Conclusion
+
+The investigation confirmed automated internal reconnaissance activity from a compromised endpoint.
+
+Early detection prevented potential lateral movement and demonstrated the importance of behavioral monitoring in modern endpoint security.
 
 
